@@ -15,11 +15,14 @@ export const bashTool = tool({
     description: bashDescription,
     inputSchema: bashInputSchema,
     execute: async ({ command, timeout }) => {
+        console.log(`Executing command: ${command}`);
         try {
             const { stdout, stderr } = await execAsync(command, {
                 timeout: timeout || 120000,
                 shell: '/bin/bash',
             })
+            console.log(`Command output: ${stdout.trim()}`);
+            console.log(`Command error: ${stderr.trim()}`);
             return {
                 success: true,
                 output: stdout.trim(),

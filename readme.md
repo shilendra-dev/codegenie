@@ -63,7 +63,7 @@ The agent will prompt you for a task description. Example tasks:
 - "Refactor the utils directory to use ES6 modules"
 - "Add unit tests for the validation functions"
 
-## =' Configuration
+## Configuration
 
 ### Environment Variables
 - `OPENAI_API_KEY`: Your OpenAI API key (required)
@@ -75,7 +75,7 @@ OR - Choose your own model from ai sdk
 - Maximum glob results: 100 files
 - Maximum agent steps: 10 per task
 
-## =� Security
+## Security
 
 The agent implements multiple security layers:
 
@@ -84,7 +84,7 @@ The agent implements multiple security layers:
 3. **Input Validation**: Uses Zod schemas to validate all inputs
 4. **Ignored Directories**: Automatically excludes `node_modules` and `dist` directories
 
-## =� Dependencies
+## Dependencies
 
 ### Core Dependencies
 - `ai`: AI SDK for model integration
@@ -98,7 +98,7 @@ The agent implements multiple security layers:
 - `@types/node`: Node.js type definitions
 - `typescript`: TypeScript compiler
 
-## > Contributing
+## Contributing
 
 1. Fork the repository
 2. Create a feature branch
@@ -106,7 +106,7 @@ The agent implements multiple security layers:
 4. Add tests if applicable
 5. Submit a pull request
 
-## =� License
+## License
 
 ISC License
 
@@ -131,7 +131,7 @@ User: "Convert all require() statements to ES6 imports"
 Agent: Uses glob to find JS files, read to examine content, and edit to make changes
 ```
 
-## = Troubleshooting
+## Troubleshooting
 
 ### Common Issues
 1. **API Key Error**: Ensure your OpenAI API key is correctly set in `.env`
@@ -143,4 +143,4 @@ The agent logs all tool executions and responses to help with debugging.
 
 ---
 
-Built with d by the CodeGenie team
+Built by Shilendra Singh - - - > "Hello guys"

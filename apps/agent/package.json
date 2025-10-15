@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.ts",
   "scripts": {
-    "dev": "tsx agent.ts",     
-    "start": "node dist/agent.js",     
+    "dev": "tsx agent.ts",
+    "start": "node dist/agent.js",
     "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -19,9 +19,11 @@
     "dotenv": "^17.2.2",
     "fast-glob": "^3.3.3",
     "g": "^2.0.1",
+    "openai": "^6.2.0",
     "prompt": "^1.3.0",
     "prompt-sync": "^4.2.0",
     "tsx": "^4.20.5",
+    "zhipu-ai-provider": "^0.1.1",
     "zod": "^4.1.11"
   },
   "devDependencies": {

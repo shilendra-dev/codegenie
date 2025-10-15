@@ -21,8 +21,6 @@ export const bashTool = tool({
                 timeout: timeout || 120000,
                 shell: '/bin/bash',
             })
-            console.log(`Command output: ${stdout.trim()}`);
-            console.log(`Command error: ${stderr.trim()}`);
             return {
                 success: true,
                 output: stdout.trim(),

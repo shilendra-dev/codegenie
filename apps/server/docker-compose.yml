@@ -1,0 +1,23 @@
+services:
+  postgres:
+    image: postgres:15-alpine
+    container_name: codegenie-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: codegenie_db
+      POSTGRES_USER: codegenie_user
+      POSTGRES_PASSWORD: codegenie_password
+    ports:
+      - "5439:5432" # Match the port in your .env file
+    volumes:
+      - codegenie_postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U codegenie_user -d codegenie_db"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 30s
+
+volumes:
+  codegenie_postgres_data:
+    driver: local

@@ -5,11 +5,18 @@
   "main": "index.js",
   "scripts": {
     "dev:agent": "pnpm --filter agent dev",
+    "dev:web": "pnpm --filter web dev",
+    "dev:server": "pnpm --filter server dev",
     "build:agent": "pnpm --filter agent build",
+    "build:web": "pnpm --filter web build",
+    "build:server": "pnpm --filter server build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "packageManager": "pnpm@10.18.1"
+  "packageManager": "pnpm@10.18.1",
+  "dependencies": {
+    "better-auth": "^1.3.27"
+  }
 }

@@ -26,7 +26,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <div className="min-h-screen w-full relative">
+        <div className="h-screen w-screen relative">
           <ThemeProvider attribute="class" defaultTheme="system" enableSystem={true}>
           {/* Dark Dot Matrix */}
           <div

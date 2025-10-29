@@ -17,6 +17,9 @@ const envSchema = z.object({
     GOOGLE_CLIENT_ID: z.string(),
     GOOGLE_CLIENT_SECRET: z.string(),
 
+    GITHUB_CLIENT_ID: z.string(),
+    GITHUB_CLIENT_SECRET: z.string(),
+
     FRONTEND_URL: z.string().optional(),
 
     JWT_SECRET: z.string().optional(),

@@ -13,4 +13,12 @@ export const googleSignIn = async () => {
     return data;
 }
 
+export const githubSignIn = async () => {
+    const data = await authClient.signIn.social({
+        provider: 'github',
+        callbackURL: 'http://localhost:3000/build',
+    });
+    return data;
+}
+
 export const { signIn, signUp, signOut, getSession, useSession } = authClient;

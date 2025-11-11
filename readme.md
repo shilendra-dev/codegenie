@@ -1,4 +1,5 @@
 # CodeGenie Agent
+Still in development, will be deployed soon
 
 An intelligent AI-powered software engineering agent that can analyze, understand, and execute various programming tasks autonomously.
 
